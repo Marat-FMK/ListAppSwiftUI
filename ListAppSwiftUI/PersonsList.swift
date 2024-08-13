@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct PersonsList: View {
+    @State var isPresented: Bool = false
+    let persons: [Person]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView() {
+            List(persons) { person in
+                NavigationLink(destination: PersonView( person: person)){
+                    PersonsListRow(person: person)
+                }
+                .listStyle(.grouped)
+                .navigationTitle("Person List")
+            }
+        }
     }
 }
-
 #Preview {
-    PersonsList()
+    PersonsList(persons: Person.getPerson())
 }

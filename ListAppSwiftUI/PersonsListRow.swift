@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct PersonsListRow: View {
+   
+    let person: Person
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("\(person.name)")
+            
+            Text("\(person.surname)")
+        }
     }
 }
 
 #Preview {
-    PersonsListRow()
+    PersonsListRow(person: Person(id: 1, name: "mas", surname: "mmkksdsv", phone: "242424", eMail: "211111@@@@@mail.ru"))
 }
