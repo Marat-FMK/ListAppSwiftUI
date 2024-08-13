@@ -1,5 +1,5 @@
 //
-//  PersonView.swift
+//  PersonviewFillInfo.swift
 //  ListAppSwiftUI
 //
 //  Created by Marat Fakhrizhanov on 13.08.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PersonView: View {
+struct PersonViewFullInfo: View {
     
     @State private var hideEmail = true
     
@@ -23,7 +23,7 @@ struct PersonView: View {
 //                 .frame(width:200, height: 200)
 //                 .rotationEffect(.degrees(43))
 //             .opacity(0.25)
-//            
+//
             VStack(alignment: .leading) {
                
                     Text("\(person.surname) \(person.name)")
