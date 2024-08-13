@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PersonsList: View {
-    @State var isPresented: Bool = false
+   
     let persons: [Person]
     
     var body: some View {

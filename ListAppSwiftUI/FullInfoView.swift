@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct FullInfoView: View {
+    
+    @State var isPresented: Bool = false
+    
     let persons: [Person]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(persons) { person in
+             Section(header: Text("\(person.name) \(person.surname)")) {
+                 
+                    Text(person.phone)
+                        .foregroundStyle(Color.red)
+                    Text(person.eMail)
+                        .foregroundStyle(Color.black)
+                
+            }
+                .font(.title2)
+                
+            }
+            
+            .padding()
+        }
     }
-}
 
 #Preview {
     FullInfoView(persons: Person.getPerson())

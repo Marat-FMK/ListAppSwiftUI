@@ -9,31 +9,17 @@ import SwiftUI
 
 struct PersonViewFullInfo: View {
     
-    @State private var hideEmail = true
+   
     
     var person: Person
    
-    var hideEmailPerson: String {
-        hideEmail ? "" : person.eMail
-    }
     var body: some View {
-        ZStack {
-//            Image(systemName: "phone.connection.fill")
-//                 .resizable()
-//                 .frame(width:200, height: 200)
-//                 .rotationEffect(.degrees(43))
-//             .opacity(0.25)
-//
             VStack(alignment: .leading) {
                
                     Text("\(person.surname) \(person.name)")
                         .font(.system(size: 40))
                         .frame(alignment: .center)
-//                    Spacer()
-//                    Button(action: {}) {
-//                        Text("OK")
-//                    }
-//                    .font(.system(size: 25))
+                 .font(.system(size: 25))
                 
                 
                 Image(systemName: "person.circle")
@@ -41,7 +27,7 @@ struct PersonViewFullInfo: View {
                     .frame(width: 290, height: 290,alignment: .center)
                     
                 
-                Text("📧 - \(hideEmailPerson)")
+                Text("📧 - \(person.eMail)")
                     .font(.system(size: 30))
                 Text("☎️ - \(person.phone)")
                     .font(.system(size: 30))
@@ -49,17 +35,7 @@ struct PersonViewFullInfo: View {
                 Text("\(person.name == "Marat" ? "😎" : "" )")
                     .font(.system(size: 200))
             }
-//            .offset(y: -200)
-        }.padding()
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Toggle("Show email", isOn: $hideEmail)
-                    .toggleStyle(.automatic)
-            }
-        }
-        
      }
-
 }
 
 #Preview {
