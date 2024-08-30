@@ -32,7 +32,7 @@ struct Person: Identifiable {
     }
 }
 
-var names = ["Veron", "Igor", "Marat", "Daria", "kirill", "Nikita", "Amir","Leila", "Marina","Maksim"]
+var names = ["Veron", "Igor", "Marat", "Darya", "kirill", "Nikita", "Amir","Leila", "Marina","Maksim"]
 var surnames = ["Pashenchyk", "Matveev", "Pak", "Kireeva", "Mavsisyan", "Polkilo", "Fahermen", "Shnaider", "Mavletdinov", "Tilorchyk"]
 var phones = [ "89261234337", "89234234567", "8923458467", "89261238867", "89261234907", "89261230127", "89261234500", "89243674567", "89261233367", "89261238567" ]
 
