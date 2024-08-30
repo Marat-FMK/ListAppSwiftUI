@@ -44,6 +44,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C358DEB2C8207C200953E7E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		6C4DFEFD2C6B73670087BB9C = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +76,7 @@
 				6C4DFF1D2C6B7AB50087BB9C /* PersonsList.swift */,
 				6C4DFF192C6B79EA0087BB9C /* PersonView.swift */,
 				6C4DFF232C6BDD040087BB9C /* PersonViewFullInfo.swift */,
+				6C358DEB2C8207C200953E7E /* New Group */,
 				6C4DFF212C6BB1640087BB9C /* PersonsListRow.swift */,
 				6C4DFF1F2C6B7F370087BB9C /* FullInfoView.swift */,
 				6C4DFF0D2C6B73680087BB9C /* Assets.xcassets */,
